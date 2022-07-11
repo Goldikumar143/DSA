@@ -1,6 +1,6 @@
 class Solution {
     public void rotate(int[] nums, int k) {
-       List<Integer> list=new ArrayList<Integer>(nums.length);
+      // List<Integer> list=new ArrayList<Integer>(nums.length);
        
        
        
