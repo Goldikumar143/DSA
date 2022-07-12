@@ -16,7 +16,7 @@ class Solution {
 	    ListNode nex=curr.next;
 	    if(curr.val==nex.val){
 	       curr.next=nex.next;
-	       nex.next=null;
+	       
 	      
 	       
 	    }else{
