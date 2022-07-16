@@ -1,33 +1,25 @@
 class Solution {
     public List<Integer> findDuplicates(int[] nums) {
-         List<Integer> li = new ArrayList<>();
-        cycleSort(nums);
-        System.out.print(Arrays.toString(nums));
-        for(int i = 0; i<nums.length; i++){
-            if(nums[i] != i + 1){
-                li.add(nums[i]);
+    List  ans = new ArrayList <>();
+        int j =0; 
+        
+        Arrays.sort(nums);
+        for (int i =1 ; i< nums.length ; i++){
+            
+            if (nums[j] == nums[i]){
+               
+                j++;
+                ans.add(nums[i]);
+                
+            }
+            else{
+               
+                j++;
+                
             }
         }
-        return li;
-        
+        return ans;   
     }
     
-    static void cycleSort(int[] nums){
-        int i = 0;
-         while(i < nums.length){
-             int curr = nums[i] -1;
-             if(nums[i] != nums[curr]){
-                 swap(nums, i, curr);
-             }else{
-                 i++;
-             }
-         } 
-    }
-    
-    static void swap(int[] nums , int f , int l){
-        int temp = nums[f];
-        nums[f] = nums[l];
-        nums[l] = temp;
-    }
     
     }
