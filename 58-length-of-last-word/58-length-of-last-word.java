@@ -9,12 +9,15 @@ class Solution {
                 }
                 else if (temp[i]==' ' && ans==0){
                     t++;
+                    
                 }
                 else if(temp[i]==' ' && ans>0){
                     break;
                 }
             }
-        ans = ans+t;
-        return ans -t;
+        System.out.print(t);
+        System.out.print(ans);
+        
+        return ans;
     }
 }
