@@ -17,7 +17,7 @@ class Solution {
             }
         System.out.print(t);
         System.out.print(ans);
-        
-        return ans;
+        ans = ans+t;
+        return ans -t;
     }
 }
